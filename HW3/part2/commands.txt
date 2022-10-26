@@ -1,0 +1,2 @@
+gcc -o makeFileSystem makeFileSystem.c -lm
+./makeFileSystem 4 mySystem.dat

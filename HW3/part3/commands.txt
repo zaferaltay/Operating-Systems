@@ -1,0 +1,11 @@
+gcc -o fileSystemOper fileSystemOper.c -lm
+./fileSystemOper mySystem.dat mkdir "\usr1"
+./fileSystemOper mySystem.dat mkdir "\usr2"
+./fileSystemOper mySystem.dat mkdir "\usr3"
+./fileSystemOper mySystem.dat mkdir "\usr5\a1" ----> error
+./fileSystemOper mySystem.dat dir "\root"
+./fileSystemOper mySystem.dat mkdir "\usr3\a1"
+./fileSystemOper mySystem.dat mkdir "\usr3\a2"
+./fileSystemOper mySystem.dat mkdir "\usr3\a1"  --> error
+./fileSystemOper mySystem.dat dir "\usr3"
+./fileSystemOper mySystem.dat dumpe2fs
